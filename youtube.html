@@ -11,10 +11,18 @@
 
             .search-bar {
                 font-size: 20px;
+                display: block;
             }
 
             .video-title {
                 width: 300px
+            }
+
+            .video-preview {
+                width: 300px;
+                display: inline-block;
+                vertical-align: top;
+                margin-right: 15px;
             }
 
             
@@ -22,10 +30,12 @@
     </head>
     <body>
         <input class="search-bar" type="text" placeholder="Search">
-        <img class="thumbnail" src="thumbnails/thumbnail-1.avif">
+        
    
+        <div class="video-preview">
+            <img class="thumbnail" src="thumbnails/thumbnail-1.avif">
 
-        <p class="video-title">
+            <p class="video-title">
             I Built a Fully Autonomous Flying Umbrella
         </p>
         <p class="video-author">
@@ -34,5 +44,20 @@
         <p class="video-stats">
             927k views &#183; 3 weeks ago
         </p>
+        </div>
+
+        <div class="video-preview">
+            <img class="thumbnail" src="thumbnails/thumbnail-2.avif">
+
+        <p class="video-title">
+            Living like a King in China for $20 a Day!!
+        </p>
+        <p class="video-author">
+            More Best Ever Food Review Show
+        </p>
+        <p class="video-stats">
+            961k views &#183; 3 days ago
+        </p>
+        </div>
     </body>
 </html>
