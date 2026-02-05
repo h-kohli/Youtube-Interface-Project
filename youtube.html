@@ -19,8 +19,7 @@
             }
 
             .thumbnail {
-                width: 300px;
-                display: block;
+                width: 100%;
             }
 
             .search-bar {
@@ -36,24 +35,16 @@
               margin-bottom: 12px;
             }
 
-            .video-preview {
-                width: 300px;
-                display: inline-block;
-                vertical-align: top;
-                margin-right: 15px;
+
+            .video-info-grid {
+              display: grid;
+              grid-template-columns: 50px 1fr;
             }
 
             .channel-pfp {
-              display: inline-block;
-              width: 40px;
-              vertical-align: top;
               margin-right: 8px
             }
 
-            .video-info {
-              display: inline-block;
-              width: 200px;
-            }
 
             .profile-picture {
               width: 100%;
@@ -74,68 +65,197 @@
               margin-bottom: 4px;
             }
             
+            .video-grid {
+              display: grid;
+              grid-template-columns: 1fr 1fr 1fr;
+              column-gap: 16px;
+              row-gap: 40px;
+            }
         </style>
     </head>
     <body>
       <input class="search-bar" type="text" placeholder="Search">
-        
+      
+      <div class="video-grid">
+          <div class="video-preview">
+
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-1.avif">
+          </div>
+
+          <div class="video-info-grid">
+
+            <div class="channel-pfp">
+              <img class="profile-picture" src="channel-pictures/channel-pfp-1.jpg">
+            </div>
+
+            <div class="video-info">
+              <p class="video-title">
+                I Built a Fully Autonomous Flying Umbrella
+              </p>
+              <p class="video-author">
+                I Build Stuff
+              </p>
+              <p class="video-stats">
+                927k views &#183; 3 weeks ago
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="video-preview">
+
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-2.avif">
+          </div>
+
+          <div class="video-info-grid">
+
+            <div class="channel-pfp">
+              <img class="profile-picture" src="channel-pictures/channel-pfp-2.jpg">
+            </div >
+
+            <div class="video-info">
+              <p class="video-title">
+                Living like a King in China for $20 a Day!!
+              </p>
+              <p class="video-author">
+                More Best Food Ever Review Show
+              </p>
+              <p class="video-stats">
+                965k views &#183; 3 days ago
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="video-preview">
+
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-3.avif">
+          </div>
+
+          <div class="video-info-grid">
+
+            <div class="channel-pfp">
+              <img class="profile-picture" src="channel-pictures/channel-pfp-3.jpg">
+            </div>
+
+            <div class="video-info">
+              <p class="video-title">
+                The 2025 F1 Season in 21 Minutes
+              </p>
+              <p class="video-author">
+                Rick'sF1Addiction
+              </p>
+              <p class="video-stats">
+                916k views &#183; 3 weeks ago
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="video-preview">
+
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-4.avif">
+          </div>
+
+          <div class="video-info-grid">
+
+            <div class="channel-pfp">
+              <img class="profile-picture" src="channel-pictures/channel-pfp-4.jpg">
+            </div >
+
+            <div class="video-info">
+              <p class="video-title">
+                World #1 Faces World No #2 BLINDFOLD
+              </p>
+              <p class="video-author">
+                Chess.com
+              </p>
+              <p class="video-stats">
+                1.4M views &#183; 9 days ago
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="video-preview">
+
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-5.avif">
+          </div>
+
+          <div class="video-info-grid">
+
+            <div class="channel-pfp">
+              <img class="profile-picture" src="channel-pictures/channel-pfp-5.jpg">
+            </div>
+
+            <div class="video-info">
+              <p class="video-title">
+                NBA "Greatest Sportsmanship" MOMENTS
+              </p>
+              <p class="video-author">
+                KingSwish
+              </p>
+              <p class="video-stats">
+                2.1M views &#183; 3 years ago
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="video-preview">
+
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-6.avif">
+          </div>
+
+          <div class="video-info-grid">
+
+            <div class="channel-pfp">
+              <img class="profile-picture" src="channel-pictures/channel-pfp-6.jpg">
+            </div >
+
+            <div class="video-info">
+              <p class="video-title">
+                Michael Scott Moments That Make Me Respect Him - The Office US
+              </p>
+              <p class="video-author">
+                The Office
+              </p>
+              <p class="video-stats">
+                693k views &#183; 4 weeks ago
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
    
-      <div class="video-preview">
-
-        <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/thumbnail-1.avif">
-        </div>
-
-        <div>
-
-          <div class="channel-pfp">
-            <img class="profile-picture" src="channel-pictures/channel-pfp-1.jpg">
-          </div>
-
-          <div class="video-info">
-            <p class="video-title">
-              I Built a Fully Autonomous Flying Umbrella
-            </p>
-            <p class="video-author">
-              I Build Stuff
-            </p>
-            <p class="video-stats">
-              927k views &#183; 3 weeks ago
-            </p>
-          </div>
-
-        </div>
-
-      </div>
-
-
-
-      <div class="video-preview">
-
-        <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/thumbnail-2.avif">
-        </div>
-
-        <div>
-
-          <div class="channel-pfp">
-            <img class="profile-picture" src="channel-pictures/channel-pfp-2.jpg">
-          </div>
-
-          <div class="video-info">
-            <p class="video-title">
-              Living like a King in China for $20 a Day!!
-            </p>
-            <p class="video-author">
-              More Best Food Ever Review Show
-            </p>
-            <p class="video-stats">
-              965k views &#183; 3 days ago
-            </p>
-          </div>
-
-        </div>
-
-      </div>
+      
     </body>
 </html>
