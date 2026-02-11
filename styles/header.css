@@ -70,6 +70,26 @@
     margin-right: 10px;
 }
 
+.search-button .tooltip  {
+    position: absolute;
+    background-color: grey;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15;
+    pointer-events: none;
+}
+
+.search-button:hover .tooltip {
+    opacity: 1;
+}
+
 .search-icon {
     height: 25px;
     margin-top: 4px;
